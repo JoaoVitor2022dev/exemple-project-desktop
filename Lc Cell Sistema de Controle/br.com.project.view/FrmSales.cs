@@ -151,6 +151,12 @@ namespace Lc_Cell_Sistema_de_Controle.br.com.project.view
         {
 
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void label6_Click(object sender, EventArgs e)
         {
 

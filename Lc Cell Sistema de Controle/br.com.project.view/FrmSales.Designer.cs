@@ -55,8 +55,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnPayment = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -70,7 +68,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(949, 142);
+            this.panel1.Size = new System.Drawing.Size(949, 79);
             this.panel1.TabIndex = 4;
             // 
             // label1
@@ -78,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(321, 50);
+            this.label1.Location = new System.Drawing.Point(336, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 41);
             this.label1.TabIndex = 1;
@@ -92,7 +90,7 @@
             this.groupBox1.Controls.Add(this.txtNameClient);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 186);
+            this.groupBox1.Location = new System.Drawing.Point(12, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(408, 196);
             this.groupBox1.TabIndex = 5;
@@ -174,7 +172,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 455);
+            this.groupBox2.Location = new System.Drawing.Point(12, 285);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(408, 291);
             this.groupBox2.TabIndex = 6;
@@ -293,21 +291,22 @@
             // 
             this.ProductTable.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.ProductTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductTable.Location = new System.Drawing.Point(426, 146);
+            this.ProductTable.Location = new System.Drawing.Point(426, 90);
             this.ProductTable.Name = "ProductTable";
-            this.ProductTable.Size = new System.Drawing.Size(489, 459);
+            this.ProductTable.Size = new System.Drawing.Size(489, 270);
             this.ProductTable.TabIndex = 8;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtTotal);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(426, 620);
+            this.groupBox3.Location = new System.Drawing.Point(426, 366);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(489, 126);
+            this.groupBox3.Size = new System.Drawing.Size(489, 111);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Total";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // txtTotal
             // 
@@ -334,7 +333,7 @@
             this.btnPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnPayment.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayment.ForeColor = System.Drawing.Color.White;
-            this.btnPayment.Location = new System.Drawing.Point(426, 772);
+            this.btnPayment.Location = new System.Drawing.Point(447, 503);
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(208, 73);
             this.btnPayment.TabIndex = 46;
@@ -347,43 +346,19 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(49)))), ((int)(((byte)(38)))));
             this.btnExit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(697, 772);
+            this.btnExit.Location = new System.Drawing.Point(675, 503);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(208, 73);
             this.btnExit.TabIndex = 47;
             this.btnExit.Text = "Cancelar";
             this.btnExit.UseVisualStyleBackColor = false;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(164, 149);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 34);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Cliente";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(162, 403);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 34);
-            this.label11.TabIndex = 48;
-            this.label11.Text = "Produto";
-            // 
             // FrmSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.ClientSize = new System.Drawing.Size(917, 857);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
+            this.ClientSize = new System.Drawing.Size(917, 596);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.groupBox3);
@@ -405,7 +380,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -436,8 +410,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtTimeNow;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         public System.Windows.Forms.TextBox txtTotal;
     }
 }
